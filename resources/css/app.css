@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    @apply w-[150px] h-auto m-[10px];
+}
+
+.current-location-dot {
+    @apply bg-blue-500 rounded-full border-2 border-white;
+}
+
+#notificationContainer {
+    @apply fixed top-2 right-2 z-[2000];
+}
+
+#notificationContainer > div {
+    @apply transition-opacity duration-300;
+}
+
+#searchDropdown div {
+    @apply flex items-center p-2 cursor-pointer transition-colors duration-200;
+}
+
+#searchDropdown div:hover {
+    @apply bg-gray-100;
+}
+
+#searchDropdown img {
+    @apply w-5 h-5 mr-2;
+}
